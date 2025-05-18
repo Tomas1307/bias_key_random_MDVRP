@@ -1,0 +1,7 @@
+{
+  "population_size": 250,
+  "elite_percent": 0.1,
+  "mutants_percent": 0.2,
+  "max_generations": 250,
+  "p_bias": 0.8
+}
