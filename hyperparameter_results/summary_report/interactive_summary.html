@@ -1,0 +1,134 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Análisis de Hiperparámetros - Resumen Interactivo</title>
+                <style>
+                    body { 
+                        font-family: Arial, sans-serif; 
+                        margin: 20px; 
+                        background-color: #f5f5f5;
+                    }
+                    .container { 
+                        max-width: 1200px; 
+                        margin: 0 auto; 
+                        background-color: white;
+                        padding: 20px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                    }
+                    h1 { color: #2c3e50; text-align: center; }
+                    h2 { color: #3498db; margin-top: 30px; }
+                    table { 
+                        width: 100%; 
+                        border-collapse: collapse; 
+                        margin: 20px 0;
+                    }
+                    th, td { 
+                        padding: 10px; 
+                        border: 1px solid #ddd; 
+                        text-align: left;
+                    }
+                    th { background-color: #f2f2f2; }
+                    tr:nth-child(even) { background-color: #f9f9f9; }
+                    .highlight { background-color: #e8f4f8; font-weight: bold; }
+                    .card {
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        padding: 15px;
+                        margin: 10px 0;
+                        background-color: #fff;
+                    }
+                    .flex-container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+                    .flex-item {
+                        flex: 0 0 48%;
+                        margin-bottom: 20px;
+                    }
+                    .chart-container {
+                        width: 100%;
+                        height: 300px;
+                        border: 1px solid #ddd;
+                        border-radius: 5px;
+                        overflow: hidden;
+                    }
+                    @media (max-width: 768px) {
+                        .flex-item {
+                            flex: 0 0 100%;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>Análisis de Hiperparámetros - Resumen Interactivo</h1>
+                    
+                    <div class="card">
+                        <h2>Mejor Configuración Global</h2>
+                        <div class="flex-container">
+            <div class="flex-item"><table><tr><th>Hiperparámetro</th><th>Valor Óptimo</th></tr><tr class="highlight"><td>population_size</td><td>250.0</td></tr><tr class="highlight"><td>elite_percent</td><td>0.1</td></tr><tr class="highlight"><td>mutants_percent</td><td>0.2</td></tr><tr class="highlight"><td>max_generations</td><td>250.0</td></tr><tr class="highlight"><td>p_bias</td><td>0.8</td></tr></table></div>
+                <div class="flex-item">
+                    <div class="chart-container">
+                        <img src="summary_dashboard.png" alt="Resumen visual" style="width:100%; height:auto;">
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+                <div class="card">
+                    <h2>Mejores Configuraciones por Instancia</h2>
+                    <table>
+                        <tr>
+                            <th>Instancia</th>
+                            <th>Fitness</th>
+            <th>population_size</th><th>elite_percent</th><th>mutants_percent</th><th>max_generations</th><th>p_bias</th><th>Tiempo (s)</th></tr><tr><td>p01</td><td>687.24</td><td>250</td><td>0.1</td><td>0.3</td><td>200</td><td>0.7</td><td>42.26</td></tr><tr><td>p02</td><td>534.50</td><td>250</td><td>0.1</td><td>0.4</td><td>200</td><td>0.7</td><td>150.30</td></tr><tr><td>p08</td><td>11803.80</td><td>200</td><td>0.2</td><td>0.1</td><td>250</td><td>0.8</td><td>2665.07</td></tr><tr><td>p09</td><td>12037.00</td><td>250</td><td>0.1</td><td>0.1</td><td>250</td><td>0.7</td><td>2928.28</td></tr><tr><td>p10</td><td>12025.10</td><td>250</td><td>0.1</td><td>0.2</td><td>200</td><td>0.8</td><td>2149.62</td></tr><tr><td>p11</td><td>11887.50</td><td>250</td><td>0.1</td><td>0.2</td><td>250</td><td>0.8</td><td>3744.39</td></tr><tr><td>p15</td><td>7757.86</td><td>200</td><td>0.2</td><td>0.2</td><td>250</td><td>0.8</td><td>1062.48</td></tr><tr><td>p18</td><td>15038.40</td><td>250</td><td>0.1</td><td>0.1</td><td>250</td><td>0.8</td><td>3408.23</td></tr><tr><td>p21</td><td>31292.80</td><td>100</td><td>0.1</td><td>0.2</td><td>250</td><td>0.8</td><td>2929.28</td></tr><tr><td>pr02</td><td>2188.68</td><td>250</td><td>0.2</td><td>0.2</td><td>150</td><td>0.7</td><td>350.92</td></tr><tr><td>pr07</td><td>1671.37</td><td>250</td><td>0.1</td><td>0.1</td><td>150</td><td>0.7</td><td>405.52</td></tr></table></div>
+                    <div class="card">
+                        <h2>Análisis de Sensibilidad</h2>
+                        <table>
+                            <tr>
+                                <th>Hiperparámetro</th>
+                                <th>Impacto (%)</th>
+                                <th>Mejor Valor</th>
+                                <th>Recomendación</th>
+                            </tr>
+                <tr class="highlight"><td>population_size</td><td>21.95%</td><td>250</td><td><strong>Crítico - Usar exactamente 250</strong></td></tr><tr class=""><td>elite_percent</td><td>6.11%</td><td>0.1</td><td>Importante - Preferir 0.1</td></tr><tr class=""><td>mutants_percent</td><td>5.88%</td><td>0.1</td><td>Importante - Preferir 0.1</td></tr><tr class=""><td>p_bias</td><td>5.64%</td><td>0.9</td><td>Importante - Preferir 0.9</td></tr><tr class=""><td>max_generations</td><td>1.37%</td><td>250</td><td>Flexible - 250 o similar</td></tr></table></div>
+                <div class="card">
+                    <h2>Conclusiones y Recomendaciones</h2>
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <h3>Recomendación General</h3>
+                            <p>Para obtener los mejores resultados en todas las instancias, se recomienda la siguiente configuración:</p>
+                            <table>
+            <tr><td><strong>population_size</strong></td><td>250.0</td></tr><tr><td><strong>elite_percent</strong></td><td>0.1</td></tr><tr><td><strong>mutants_percent</strong></td><td>0.2</td></tr><tr><td><strong>max_generations</strong></td><td>250.0</td></tr><tr><td><strong>p_bias</strong></td><td>0.8</td></tr>
+                            </table>
+                        </div>
+                        <div class="flex-item">
+                            <h3>Optimización por Objetivo</h3>
+                            <table>
+                                <tr><th>Objetivo</th><th>Recomendación</th></tr>
+                                <tr><td>Máxima calidad</td><td>Usar la configuración global recomendada</td></tr>
+                                <tr><td>Tiempo limitado</td><td>Reducir tamaño de población, aumentar élites</td></tr>
+                                <tr><td>Problemas grandes</td><td>Aumentar tamaño de población</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <h2>Mejoras Futuras</h2>
+                    <ul>
+                        <li><strong>Exploración adaptativa</strong>: Implementar mecanismos adaptativos para los parámetros más sensibles</li>
+                        <li><strong>Enfoque en parámetros clave</strong>: Realizar una búsqueda más fina para los parámetros de mayor impacto</li>
+                        <li><strong>Hibridización</strong>: Combinar el algoritmo genético con búsquedas locales</li>
+                        <li><strong>Paralelización</strong>: Implementar evaluación paralela para poblaciones grandes</li>
+                    </ul>
+                </div>
+            
+                </div>
+            </body>
+            </html>
+            
