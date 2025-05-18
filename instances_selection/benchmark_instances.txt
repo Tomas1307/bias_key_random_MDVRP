@@ -1,0 +1,13 @@
+INSTANCIAS SELECCIONADAS PARA BENCHMARKING
+
+1. p01.dat 
+2. p02.dat 
+3. p08.dat 
+4. p09.dat 
+5. p10.dat 
+6. p11.dat 
+7. p15.dat 
+8. p18.dat
+9. p21.dat
+10. pr02.dat
+11. pr07.dat

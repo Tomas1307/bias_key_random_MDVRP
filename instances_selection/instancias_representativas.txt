@@ -1,0 +1,52 @@
+INSTANCIAS REPRESENTATIVAS POR CATEGORÍA
+==================================================
+
+Categoría 1: p18.dat
+Categoría 2: p01.dat
+Categoría 3: p10.dat
+
+
+==================================================
+INSTANCIAS POR CATEGORÍA
+==================================================
+
+Categoría 1:
+  - p15.dat
+  - p16.dat
+  - p17.dat
+  - p18.dat
+  - p19.dat
+  - p20.dat
+  - p21.dat
+  - p22.dat
+  - p23.dat
+  - pr03.dat
+  - pr04.dat
+  - pr05.dat
+  - pr06.dat
+  - pr07.dat
+  - pr08.dat
+  - pr09.dat
+  - pr10.dat
+
+Categoría 2:
+  - p01.dat
+  - p02.dat
+  - p03.dat
+  - p04.dat
+  - p05.dat
+  - p06.dat
+  - p07.dat
+  - p12.dat
+  - p13.dat
+  - p14.dat
+  - pfbo.dat
+  - pr01.dat
+  - pr02.dat
+
+Categoría 3:
+  - p08.dat
+  - p09.dat
+  - p10.dat
+  - p11.dat
+
