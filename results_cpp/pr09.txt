@@ -1,0 +1,4 @@
+# Hyperparameter Testing for Instance: pr09
+# Format: config_string, best_distance, convergence_generation, execution_time, num_routes, num_used_depots
+#
+pop=250_elite=0.1_mutant=0.2_gen=250_bias=0.8, 6929.19, 114, 3081.66, 18, 6

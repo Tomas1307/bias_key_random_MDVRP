@@ -1,0 +1,4 @@
+# Hyperparameter Testing for Instance: pr07
+# Format: config_string, best_distance, convergence_generation, execution_time, num_routes, num_used_depots
+#
+pop=250_elite=0.1_mutant=0.2_gen=250_bias=0.8, 1714.24, 89, 431.476, 6, 6
